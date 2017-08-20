@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app1.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Totally Trivial Trivia</title>
+  </head>
+  <body>
+	<div class="container">
+		<h1 class="header">Totally Trivial Trivia</h1>
+		<h2 id="time">Time Remaining: </h2>
+		<div id="questions">
+		    <form action="/success-page" id="simple-quiz" name="quiz">
+		      <!-- Questions and choices -->
+		     
+		     <!-- Question 1 -->
+		      <h3 class="quest">What is your favorite Pet?</h3>
+		      <label>
+		        <input type="radio" name="a1" value="A">
+		        <!-- Answer A --> Cat
+		      </label>
+		      <label>
+		        <input type="radio" name="a1" value="B">
+		        <!-- Answer B --> Dog
+		      </label>
+		      <label>
+		        <input type="radio" name="a1" value="C">
+		        <!-- Answer C --> Hamster
+		      </label>
+		      <label>
+		        <input type="radio" name="a1" value="D">
+		        <!-- Answer D --> None
+		      </label>
+
+			<!-- Question 2 -->
+		      <h3 class="quest">Question 2</h3>
+		      <label>
+		        <input type="radio" name="a2" value="A">
+		        Answer A
+		      </label>
+		      
+		      <label>
+		        <input type="radio" name="a2" value="B">
+		        Answer B
+		      </label>
+
+		      <label>
+		        <input type="radio" name="a2" value="C">
+		        Answer C
+		      </label>
+
+		      <!-- Question 3 -->
+		      <h3 class="quest">Question 3</h3>
+		      <label>
+		        <input type="radio" name="a3" value="A">
+		        Answer A
+		      </label>
+		      
+		      <label>
+		        <input type="radio" name="a3" value="B">
+		        Answer B
+		      </label>
+
+		      <label>
+		        <input type="radio" name="a3" value="C">
+		        Answer C
+		      </label>
+
+		      <!-- Question 4 -->
+		      <h3 class="quest">Question 4</h3>
+		      <label>
+		        <input type="radio" name="a4" value="A">
+		        Answer A
+		      </label>
+		      
+		      <label>
+		        <input type="radio" name="a4" value="B">
+		        Answer B
+		      </label>
+
+		      <label>
+		        <input type="radio" name="a4" value="C">
+		        Answer C
+		      </label>
+
+		      <!-- Question 5 -->
+		      <h3 class="quest">Question 5</h3>
+		      <label>
+		        <input type="radio" name="a5" value="A">
+		        Answer A
+		      </label>
+		      
+		      <label>
+		        <input type="radio" name="a5" value="B">
+		        Answer B
+		      </label>
+
+		      <label>
+		        <input type="radio" name="a5" value="C">
+		        Answer C
+		      </label>
+
+		      <!-- Question 6 -->
+		      <h3 class="quest">Question 6</h3>
+		      <label>
+		        <input type="radio" name="a6" value="A">
+		        Answer A
+		      </label>
+		      
+		      <label>
+		        <input type="radio" name="a6" value="B">
+		        Answer B
+		      </label>
+
+		      <label>
+		        <input type="radio" name="a6" value="C">
+		        Answer C
+		      </label>
+
+		      <!-- Question 7 -->
+		      <h3 class="quest">Question 7</h3>
+		      <label>
+		        <input type="radio" name="a7" value="A">
+		        Answer A
+		      </label>
+		      
+		      <label>
+		        <input type="radio" name="a7" value="B">
+		        Answer B
+		      </label>
+
+		      <label>
+		        <input type="radio" name="a7" value="C">
+		        Answer C
+		      </label>
+
+		      <!-- Question 8 -->
+		      <h3 class="quest">Question 8</h3>
+		      <label>
+		        <input type="radio" name="a8" value="A">
+		        Answer A
+		      </label>
+		      
+		      <label>
+		        <input type="radio" name="a8" value="B">
+		        Answer B
+		      </label>
+
+		      <label>
+		        <input type="radio" name="a8" value="C">
+		        Answer C
+		      </label>
+
+		      <!-- Question 2 -->
+		      <h3 class="quest">Question 9</h3>
+		      <label>
+		        <input type="radio" name="a9" value="A">
+		        Answer A
+		      </label>
+		      
+		      <label>
+		        <input type="radio" name="a9" value="B">
+		        Answer B
+		      </label>
+
+		      <label>
+		        <input type="radio" name="a9" value="C">
+		        Answer C
+		      </label>
+
+		      <!-- Question 10 -->
+		      <h3 class="quest">Question 10</h3>
+		      <label>
+		        <input type="radio" name="a10" value="A">
+		        Answer A
+		      </label>
+		      
+		      <label>
+		        <input type="radio" name="a10" value="B">
+		        Answer B
+		      </label>
+
+		      <label>
+		        <input type="radio" name="a10" value="C">
+		        Answer C
+		      </label>
+
+			<div class="form">
+		      <input id="button" type="button" value="Done" onclick="submittedOrTimeUp();">
+		    </div>
+		    </form>
+		</div>
+
+		<!-- page display changes -->
+<!-- 		<div id="result">
+			<h2 id="cor-ans">Correct Answers:</h2>
+			<h2 id="incor-ans">Incorrect Answers:</h2>
+			<h2 id="un-ans">Unanswered</h2>
+		</div>
+ -->
+    </div>
+  </body>
+</html>

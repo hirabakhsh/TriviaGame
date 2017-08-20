@@ -1,0 +1,25 @@
+
+<script type='text/javascript'>
+
+function countDown(seconds) {
+    var element = document.getElementById("status");
+    element.innerHTML = "Please wait for " + seconds + " seconds!";
+    console.log(seconds);
+    
+    if (seconds < 1) {
+        clearTimeout(timer);
+        element.innerHTML = "<h2 class='done'>All Done!</h2>";
+        // var nextElement = document.getElementById("questions");
+        // nextElement.innerHTML = "<h2 id='cor-ans'>Correct Answers: </h2>"
+        // nextElement.innerHTML +=  "<h2 id='incor-ans'>Incorrect Answers:</h2>"
+        // nextElement.innerHTML +=  "<h2 id='un-ans'>Unanswered</h2>"
+    }
+    
+    seconds--;
+    var timer = setTimeout('countDown('+seconds+')',1000);
+}
+</script>
+
+<div id='status'></div>
+
+<script type='text/javascript'>countDown(10)</script>

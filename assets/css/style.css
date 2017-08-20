@@ -1,0 +1,52 @@
+body {
+	font: 200% "Comic Sans MS",
+	cursive; background-image: url("../images/background.jpg");
+	text-align: center;
+}
+
+.container {
+	background: #f8e386;
+	height: 100%;
+
+}
+
+.header {
+	color: blue;
+
+}
+
+#time {
+
+}
+
+#simple-quiz {
+
+}
+
+.quest {
+
+}
+
+.form {
+
+}
+
+#button {
+
+}
+
+#result {
+	/*visibility: hidden;*/
+}
+
+#cor-ans {
+
+}
+
+#incor-ans {
+
+}
+
+#un-ans {
+
+}
