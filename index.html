@@ -12,8 +12,9 @@
   <body>
 	<div class="container">
 		<h1 class="header">Totally Trivial Trivia</h1>
-		<h2 id="time">Time Remaining: </h2>
+		
 		<div id="questions">
+		<h2 id="time">Time Remaining: </h2>
 		    <form action="/success-page" id="simple-quiz" name="quiz">
 		      <!-- Questions and choices -->
 		     
@@ -190,7 +191,7 @@
 		      </label>
 
 			<div class="form">
-		      <input id="button" type="button" value="Done" onclick="submittedOrTimeUp();">
+		      <input id="button" type="button" value="Done" onclick="countDown(0);">
 		    </div>
 		    </form>
 		</div>
